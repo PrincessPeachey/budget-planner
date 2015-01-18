@@ -1,0 +1,33 @@
+<% @transactions.each do |transaction| %>
+<p>
+<strong>Transaction date:</strong>
+
+<%= transaction.date %>
+</p>
+
+<p>
+<strong>Amount:</strong>
+<%= transaction.amount %>
+</p>
+
+<p>
+<strong>Credit/Debit:</strong>
+<%= transaction.credit %>
+</p>
+
+<p>
+<strong>Description:</strong>
+<%= transaction.description %>
+</p>
+
+<p>
+<strong>Recurring:</strong>
+<%= transaction.recurring %>
+</p>
+
+<p>
+<strong>Recurrence:</strong>
+<%= transaction.recurrence %>
+</p>
+
+<% end %>

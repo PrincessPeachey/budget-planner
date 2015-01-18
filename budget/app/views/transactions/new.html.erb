@@ -1,0 +1,37 @@
+<h1>New Transaction</h1>
+
+<%= form_for :transaction, url: transactions_path do |f| %>
+<p>
+<%= f.label :Transaction %><br>
+<%= f.date_field :date %>
+</p>
+
+<p>
+<%= f.label :Amount %><br>
+<%= f.number_field :amount %>
+</p>
+
+<p>
+<%= f.label :'Credit/Debit' %><br>
+<%= f.text_field :credit %>
+</p>
+
+<p>
+<%= f.label :Description %><br>
+<%= f.text_field :description %>
+</p>
+
+<p>
+<%= f.label :Recurring %><br>
+<%= f.text_field :recurring %>
+</p>
+
+<p>
+<%= f.label :Recurrence %><br>
+<%= f.text_field :recurrence %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+<% end %>

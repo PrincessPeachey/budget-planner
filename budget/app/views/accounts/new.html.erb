@@ -1,0 +1,17 @@
+<h1>New Account</h1>
+
+<%= form_for :account, url: accounts_path do |f| %>
+<p>
+<%= f.label :Account %><br>
+<%= f.text_field :account %>
+</p>
+
+<p>
+<%= f.label :Balance %><br>
+<%= f.number_field :balance %>
+</p>
+
+<p>
+<%= f.submit %>
+</p>
+<% end %>
